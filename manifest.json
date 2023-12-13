@@ -1,0 +1,18 @@
+{
+	"manifest_version": 3,
+	"name": "HideGPT",
+	"version": "1.0.0",
+	"permissions": [
+	  "storage"
+	],
+	"action": {
+	  "default_popup": "popup.html"
+	},
+	"content_scripts": [
+	  {
+		"matches": ["https://chat.openai.com/*"],
+		"js": ["contentScript.js"]
+	  }
+	]
+  }
+  
